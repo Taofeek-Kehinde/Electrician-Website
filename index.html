@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azzez_Elec Services - Professional Electrical Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Images/icon.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-bolt"></i>
+                <span>Azzez_Elec</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Professional Electrical Services </h1>
+            <p>Reliable, Safe, and Efficient Electrical Solutions for Your Home and Business</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get Discount Now </a>
+                <a href="tel:+1234567890" class="btn btn-secondary">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="Images/hero.png" alt="Professional Electrician at Work">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Electrical Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Residential Wiring</h3>
+                    <p>Complete home electrical installations, rewiring, and upgrades for modern living.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-building"></i>
+                    <h3>Commercial Electrical</h3>
+                    <p>Professional electrical solutions for offices, retail spaces, and commercial buildings.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Electrical Repairs</h3>
+                    <p>Quick and reliable repair services for all your electrical problems and emergencies.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Lighting Installation</h3>
+                    <p>Modern lighting solutions including LED installations and smart lighting systems.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Safety Inspections</h3>
+                    <p>Comprehensive electrical safety inspections and code compliance assessments.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-plug"></i>
+                    <h3>Panel Upgrades</h3>
+                    <p>Electrical panel upgrades and circuit breaker installations for enhanced safety.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Our Work Gallery</h2>
+            <div class="gallery-tabs">
+                <button class="tab-btn active" data-tab="images">Photos</button>
+                <button class="tab-btn" data-tab="videos">Videos</button>
+            </div>
+
+            <!-- Image Gallery -->
+            <div id="images" class="gallery-content active">
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openModal('/placeholder.svg?height=400&width=600')">
+                        <img src="Images/1 (1).jpg" alt="Electrical Panel Installation">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openModal('/placeholder.svg?height=400&width=600')">
+                        <img src="Images/1 (2).jpg" alt="LED Lighting Installation">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openModal('/placeholder.svg?height=400&width=600')">
+                        <img src="Images/3.jpg" alt="Commercial Wiring">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openModal('/placeholder.svg?height=400&width=600')">
+                        <img src="Images/5 (2).jpg" alt="Residential Electrical Work">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openModal('/placeholder.svg?height=400&width=600')">
+                        <img src="Images/5 (1).jpg" alt="Smart Home Installation">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openModal('/placeholder.svg?height=400&width=600')">
+                        <img src="Images/4.jpg" alt="Electrical Repair Work">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Gallery -->
+            <div id="videos" class="gallery-content">
+                <div class="video-grid">
+                    <div class="video-item">
+                        <video src="Images/4.mp4" controls="controls" poster="" muted autoplay loop playsinline
+                            style="pointer-events: none;">
+                            <source src="#" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h4>Camera Installation </h4>
+                    </div>
+                    <div class="video-item">
+                        <video src="Images/2.mp4" controls="controls" poster="" muted autoplay loop playsinline
+                            style="pointer-events: none;">
+                            <source src="#" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h4>LED Lighting Setup</h4>
+                    </div>
+                    <div class="video-item">
+                        <video src="Images/1.mp4" controls="controls" poster="" muted autoplay loop playsinline
+                            style="pointer-events: none;">
+                            <source src="#" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h4>Commercial Wiring Project</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Azzez_Elec Services</h2>
+                    <p>With over 15 years of experience in the electrical industry, Azzez_Elec Services has been
+                        providing reliable, safe, and efficient electrical solutions to residential and commercial
+                        clients.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <h4>Licensed & Insured</h4>
+                                <p>Fully licensed electricians with comprehensive insurance coverage</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>24/7 Emergency Service</h4>
+                                <p>Available round the clock for electrical emergencies</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-thumbs-up"></i>
+                            <div>
+                                <h4>Quality Guarantee</h4>
+                                <p>100% satisfaction guarantee on all our electrical work</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="Images/page.png" alt="Professional Electrician Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+2349137562556">09137562556</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:azeezshittu257@gmail.com">azeezshittu257@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p style="color:#ff6b35;">No 27 Ita Elewa Oriwu, Road <br> Ikorodu Lagos State Nigeria </p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/+2349137562556" target="_blank">Message us on WhatsApp</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="">Select Service</option>
+                            <option value="residential">Residential Wiring</option>
+                            <option value="commercial">Commercial Electrical</option>
+                            <option value="repairs">Electrical Repairs</option>
+                            <option value="lighting">Lighting Installation</option>
+                            <option value="inspection">Safety Inspection</option>
+                            <option value="panel">Panel Upgrade</option>
+                            <option value="None">None of The Above</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Describe your electrical needs..." rows="5"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-section">
+                <h3>Our Location</h3>
+                <div class="map-container">
+<iframe 
+  src="https://www.google.com/maps?q=6.6205684,3.4985372&z=17&output=embed" 
+  width="100%" 
+  height="300" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-bolt"></i>
+                        <span>Azzez_Elec</span>
+                    </div>
+                    <p>Professional electrical services you can trust. Licensed, insured, and committed to excellence.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61573088286824"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/ktaofeek015"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/taofeek-kehinde-438553249/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/+2349137562556"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Residential Wiring</li>
+                        <li>Commercial Electrical</li>
+                        <li>Emergency Repairs</li>
+                        <li>Panel Upgrades</li>
+                        <li>Safety Inspections</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> 09137562556</p>
+                        <p><i class="fas fa-envelope"></i> azeezshittu257@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> No 27 Ita Elewa Oriwu Road Ikorodu Lagos state Nigeria
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Azzez_Elec Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Image Gallery -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+        <a href="tel:+(234) 9137562556" class="float-btn call-btn" title="Call Now">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://wa.me/09137562556" class="float-btn whatsapp-btn" title="WhatsApp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="mailto:azeezshittu257@gmail.com" class="float-btn email-btn" title="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
